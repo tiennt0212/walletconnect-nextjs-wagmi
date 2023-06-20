@@ -20,7 +20,7 @@ const wagmiConfig = createConfig({
 });
 const ethereumClient = new EthereumClient(wagmiConfig, chains);
 
-export default () => {
+const WalletConnectPage = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <WagmiConfig config={wagmiConfig}>
@@ -31,3 +31,5 @@ export default () => {
     </main>
   );
 };
+
+export default WalletConnectPage;
